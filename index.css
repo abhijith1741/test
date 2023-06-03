@@ -1,0 +1,314 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+#content {
+	display: flex;
+	background: #e7efff;
+}
+
+#navbar {
+	width: 4vw;
+	height: 100vh;
+	background: #fff;
+}
+#navbar div.menu {
+	/* padding-top: 8px; */
+}
+#navbar div.menu ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#navbar div.menu ul li {
+	width: 100%;
+	height: 60px;
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+#navbar div.menu ul li:hover {
+	border-left: 4px solid orange;
+	background: #cdddff;
+}
+#navbar div.menu ul li a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: #948e8e;
+}
+#navbar div.menu ul li a:hover {
+ 	color: #000;
+	
+}
+
+#left {
+	height: 100vh;
+	width: 33vw;
+	border-right: 1px solid #948e8e;
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+#left div.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 20px 0;
+}
+#left div.top h3 {
+}
+#left div.top h3 .arrow {
+	font-size: 14px;
+    margin-right: 8px;
+}
+
+#left div.main {
+	background: white;
+	box-sizing: border-box;
+	margin-top: 16px;
+	min-height: 90vh;
+	border-radius: 8px;
+	padding: 10px;
+}
+#left div.top input {
+	border-radius: 4px;
+	padding: 4px 10px;
+	border: none;
+}
+#left div.top input::placeholder {
+	font-size: 12px;
+}
+#left table {
+	width: 100%;
+	border-collapse: collapse;
+}
+#left th {
+	font-size: 14px;
+    opacity: 0.5;
+}
+#left th,
+#left td {
+	padding: 12px 8px;
+	border: none;
+	text-align: left;
+}
+#left td .right-arrow {
+	font-size: 16px;
+    color: blue;
+}
+#left tr {
+	border-bottom: 1px solid #e4e2e2;
+}
+
+#left th:nth-child(2),
+#left td:nth-child(2) {
+	width: 60%;
+}
+
+#right {
+	height: 100vh;
+	width: 60vw;
+	/* background: lightgreen; */
+}
+#right div.top {
+	padding: 38px 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#right div.top h3 {
+}
+#right div.top div.quote {
+}
+#right div.top div.quote span.quote {
+	margin-right: 16px;
+}
+#right div.top div.quote select {
+	width: 142px;
+	height: 25px;
+	font-size: 14px;
+	background-color: green;
+	color: white;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 12px;
+}
+#right div.job {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+}
+#right div.main {
+    padding: 8px 26px 26px 26px;
+}
+#right div.job table {
+	border-collapse: separate;
+	border-spacing: 16px;
+    width: 40%;
+}
+#right div.job th {
+	font-size: 14px;
+    opacity: 0.5;
+}
+#right div.job td {
+	color: black;
+	font-weight: bold;
+}
+#right div.job td div.slidable {
+	border: 1px solid #948e8e;
+    width: 90px;
+    border-radius: 8px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#right div.job td div.slidable input[type="radio"] {
+   display: none;
+}
+#right div.job td div.slidable label {
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #948e8e;
+}
+#right div.job td div.slidable input[type="radio"]:checked + label {
+	width: 46px;
+    height: 26px;
+    background: Blue;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right div.job td select {
+	display: flex;
+	justify-content: space-between;
+	width: 142px;
+	height: 25px;
+	font-size: 14px;
+	font-size: 12px;
+}
+#right div.job th,
+td {
+	text-align: left;
+	border-bottom: none
+}
+#right div.job th:first-child,
+td:first-child {
+	text-align: left;
+}
+#right div.main div.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#right div.main div.button button {
+    width: 130px;
+    height: 30px;
+    margin-bottom: 12px;
+    text-align: center;
+    background: #3030fd;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+}
+#right div.main div.button button.btn3 {
+	background: #ebebeb;
+	color: #0c0cff;
+}
+
+#right div.main div.filter {
+	display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    width: 80%;
+    align-items: center;
+}
+#right div.main div.filter input {
+	border-radius: 4px;
+	padding: 4px 10px;
+	border: none;
+	width: 312px;
+}
+#right div.main div.filter input::placeholder {
+	font-size: 12px;
+	text-align: left;
+}
+#right div.main div.filter span.sort {
+	font-size: 14px;
+    opacity: 0.6;
+}
+#right div.main div.filter select {
+	width: 110px;
+    height: 22px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+}
+#right div.main div.filter .custom-select::before {
+	content: "Sort by";
+}
+#right div.main div.filter button {
+	width: 94px;
+    height: 22px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    background: #fff;
+}
+/* label::before {
+	content: "Sort by ";
+  } */
+  #right div.main div.job-description {
+	background: #fff;
+	padding: 0 16px;
+	border-radius: 8px;
+  }
+#right div.main div.job-description table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 10px;
+}
+#right div.main div.job-description th,
+#right div.main div.job-description td {
+	padding: 12px 6px;
+	border: none;
+	text-align: left;
+	border-bottom: 1px solid #e8e5e5;
+
+}
+#right div.main div.job-description td .delete {
+	color: blue;
+}
+#right div.main div.job-description table tr {
+	border-bottom: 1px solid black;
+}
+
+#right div.main div.job-description th:nth-child(2),
+#right div.main div.job-description td:nth-child(2) {
+	
+}
+
+
